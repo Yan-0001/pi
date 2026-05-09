@@ -74,6 +74,7 @@ pi
 | Xiaomi MiMo Token Plan (China) | `XIAOMI_TOKEN_PLAN_CN_API_KEY` | `xiaomi-token-plan-cn` |
 | Xiaomi MiMo Token Plan (Amsterdam) | `XIAOMI_TOKEN_PLAN_AMS_API_KEY` | `xiaomi-token-plan-ams` |
 | Xiaomi MiMo Token Plan (Singapore) | `XIAOMI_TOKEN_PLAN_SGP_API_KEY` | `xiaomi-token-plan-sgp` |
+| NVIDIA NIM | `NVIDIA_API_KEY` | `nvidia` |
 
 Reference for environment variables and `auth.json` keys: [`const envMap`](https://github.com/earendil-works/pi-mono/blob/main/packages/ai/src/env-api-keys.ts) in [`packages/ai/src/env-api-keys.ts`](https://github.com/earendil-works/pi-mono/blob/main/packages/ai/src/env-api-keys.ts).
 
@@ -93,7 +94,8 @@ Store credentials in `~/.pi/agent/auth.json`:
   "xiaomi": { "type": "api_key", "key": "..." },
   "xiaomi-token-plan-cn":  { "type": "api_key", "key": "..." },
   "xiaomi-token-plan-ams": { "type": "api_key", "key": "..." },
-  "xiaomi-token-plan-sgp": { "type": "api_key", "key": "..." }
+  "xiaomi-token-plan-sgp": { "type": "api_key", "key": "..." },
+  "nvidia": { "type": "api_key", "key": "..." }
 }
 ```
 
@@ -120,6 +122,17 @@ The `key` field supports three formats:
 OAuth credentials are also stored here after `/login` and managed automatically.
 
 ## Cloud Providers
+
+### NVIDIA NIM
+
+NVIDIA NIM provides an OpenAI-compatible API. Get your API key from [build.nvidia.com](https://build.nvidia.com).
+
+```bash
+export NVIDIA_API_KEY=...
+pi --provider nvidia --model deepseek-ai/deepseek-v4-pro
+```
+
+Supports a wide range of models including DeepSeek, Llama, Nemotron, Gemma, Phi, Qwen, Mistral, MiniMax, Kimi, GLM, and Step. See [build.nvidia.com](https://build.nvidia.com) for the full catalog.
 
 ### Azure OpenAI
 

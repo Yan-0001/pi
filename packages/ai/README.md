@@ -74,6 +74,7 @@ Unified LLM API with automatic model discovery, provider configuration, token an
 - **Fireworks** (uses Anthropic-compatible API)
 - **Kimi For Coding** (Moonshot AI, uses Anthropic-compatible API)
 - **Xiaomi MiMo** (uses Anthropic-compatible API; defaults to API billing endpoint, with separate Token Plan providers for `cn`/`ams`/`sgp` regions)
+- **NVIDIA NIM** (OpenAI-compatible API; DeepSeek, Llama, Nemotron, Gemma, Phi, Qwen, Mistral, MiniMax, Kimi, GLM, Step, and more)
 - **Any OpenAI-compatible API**: Ollama, vLLM, LM Studio, etc.
 
 ## Installation

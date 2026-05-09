@@ -4,6 +4,7 @@
 
 ### Added
 
+- Added NVIDIA NIM as a built-in OpenAI-compatible provider with `NVIDIA_API_KEY` authentication. Supports 67 models including DeepSeek V4, Llama 4, Nemotron, Gemma 3, Phi, Qwen3, Mistral, MiniMax, Kimi K2, GLM-5, and Step 3.5.
 - Added Together AI as a built-in OpenAI-compatible provider with generated model metadata and `TOGETHER_API_KEY` authentication ([#3624](https://github.com/earendil-works/pi-mono/pull/3624) by [@Nutlope](https://github.com/Nutlope)).
 
 ### Fixed

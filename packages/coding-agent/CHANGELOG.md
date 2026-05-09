@@ -4,6 +4,7 @@
 
 ### Added
 
+- Added NVIDIA NIM to built-in provider setup, `/login` API-key auth, default model resolution, and provider display name.
 - Added Together AI to built-in provider setup, `/login` API-key auth, and default model resolution ([#3624](https://github.com/earendil-works/pi-mono/pull/3624) by [@Nutlope](https://github.com/Nutlope)).
 
 ### Fixed
